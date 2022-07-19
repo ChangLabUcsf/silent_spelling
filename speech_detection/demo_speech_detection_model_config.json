@@ -1,0 +1,90 @@
+{
+  "supervised_lstm_model": {
+    "model_parameters": {
+      "layers": 3,
+      "nodes": [
+        100,
+        50,
+        50
+      ],
+      "lstm_type": "unidirectional",
+      "min_epochs": 5,
+      "max_epochs": 300,
+      "dropout_rate": 0.5,
+      "model_scope": "speech_detection",
+      "model_ind": 1
+    },
+    "training_parameters": {
+      "early_stopping": 10,
+      "cv_best": 10000,
+      "total_batch_size": 256,
+      "batches_per_epoch": 50,
+      "learning_rate": 0.001,
+      "loss_tolerance": 0.001,
+      "false_positive_weight": 1.0
+    }
+  },
+  "data_parameters": {
+    "trials_per_file": 12,
+    "neural_feat_type": "ECoG",
+    "window": 0.5,
+    "feature_labels": [
+      "silence",
+      "speech",
+      "preparation",
+      "motor"
+    ],
+    "num_folds": 5,
+    "fold_split": 0.2,
+    "val_fold_split": 0.2,
+    "event_window": {
+      "speech": [
+        0.0,
+        1.0
+      ],
+      "motor": [
+        0.0,
+        2.0
+      ]
+    }
+  },
+  "detection_parameters": {
+    "positive_weight": 0.75,
+    "frame_acc_weight": 0.4,
+    "time_threshold_penalty": 0.00025,
+    "speech": {
+      "time_threshold": 69,
+      "prob_threshold": 0.21143864438689353,
+      "smoothing": "average",
+      "smooth_size": 62,
+      "search_window": [-1.75, 3.5]
+    },
+    "motor": {
+      "time_threshold": 25,
+      "prob_threshold": 0.8,
+      "smoothing": "average",
+      "smooth_size": 42,
+      "search_window": [-1.0, 2.0]
+    }
+  },
+  "hyperopt_detection_parameters": {
+    "speech": {
+      "time_threshold": 51,
+      "prob_threshold": 0.2254243628274297,
+      "smooth_size": 11
+    },
+    "motor": {
+      "time_threshold": 25,
+      "prob_threshold": 0.6,
+      "smooth_size": 2
+    }
+  },
+  "subject_specific": {
+    "bravo": {
+      "grid_size": 128,
+      "input_streams": "neural/hgarawcar200_running30",
+      "num_data_streams": 2,
+      "default_sr": 200
+    }
+  }
+}
