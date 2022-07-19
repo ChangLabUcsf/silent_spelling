@@ -1,0 +1,34 @@
+# egg folders
+.eggs/
+eggs/
+*.egg
+*.egg-info/
+
+# saved figures
+*saved_figures*
+
+# speech det files
+speech_detection/bravo1/data/*
+speech_detection/bravo1/results/*
+speech_detection/*.log
+
+# notebook files
+*.ipynb_checkpoints*
+
+# bash scripts
+*.sh
+
+# OS generated files #
+*.DS_store*
+*.DS_Store
+*._*
+
+# python compiled #
+*.pyc
+__pycache__/
+
+# pycharm files? #
+.idea
+
+# Ignore the data files
+*.npy
