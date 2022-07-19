@@ -1,4 +1,4 @@
-# Generalizable spelling using a speech neuroprosthesis in an individual with severe limb and vocal-tract paralysi
+# Generalizable spelling using a speech neuroprosthesis in an individual with severe limb and vocal paralysis
 
 This repository contains code to train and test classification and
 speech-detection models that decode silent-speech attempts from cortical activity
