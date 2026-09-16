@@ -10,7 +10,7 @@ scipy==1.5.4
 scikit-learn==0.24.2
 joblib==0.14.1
 json5==0.9.5
-nltk==3.6.2
+nltk==3.10.3
 wandb==0.10.19
 jupyterlab==2.1.2
 notebook==6.0.3
