@@ -1,7 +1,7 @@
 ipython
 decorator==4.4.2
 matplotlib==3.1.0
-numpy==1.19.1
+numpy==1.22.0
 cycler==0.10.0
 h5py==2.10.0
 pandas==0.25.3
