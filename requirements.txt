@@ -12,7 +12,7 @@ joblib==0.14.1
 json5==0.9.5
 nltk==3.6.2
 wandb==0.10.19
-jupyterlab==2.1.2
+jupyterlab==4.5.11
 notebook==6.0.3
 tables==3.6.1
 lm-scorer==0.4.2
